@@ -11,7 +11,7 @@ import java.util.Iterator;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub on Dec 31
 
 		try {
 			// step1 load the driver class
@@ -41,13 +41,13 @@ public class Main {
 			}
 
 			printHouseDeatils(hdlist);
-			
+
 			//stmt.executeQuery();
 			stmt.executeUpdate("update HouseDetails set Cost =Cost+100000 where listingID= '21030545' ");
 			stmt.executeUpdate("delete HouseDetails where listingID= '2341333'");
-			
-			
-		
+
+
+
 
 			// step5 close the connection object
 			con.close();
@@ -70,7 +70,7 @@ public class Main {
 
 	}
 
-	private static HouseDetails buildHouseDeatils(String listingID, String realtorID, String address, String city, 
+	private static HouseDetails buildHouseDeatils(String listingID, String realtorID, String address, String city,
 			Float cost, Date statusDate, Integer yearBuilt, String question ) {
 		// TODO Auto-generated method stub
 
@@ -83,7 +83,7 @@ public class Main {
 		hd.setStatusDate(statusDate);
 		hd.setYearBuilt(yearBuilt);
 		hd.setQuestion(question);
-	
+
 
 		return hd;
 
