@@ -17,7 +17,7 @@ public class Main {
 			// step1 load the driver class
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 
-			String connectionUrl = "jdbc:sqlserver://localhost:52188;databaseName=Realtor;user=sachin;password=sachin";
+			String connectionUrl = "jdbc:sqlserver://localhost:52188;databaseName=Realtor;user=zzzzzz;password=zzzzz";
 
 			// step2 create the connection object
 			Connection con = DriverManager.getConnection(connectionUrl);
